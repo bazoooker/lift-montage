@@ -1,0 +1,65 @@
+.fancy-checkbox {
+  	position: relative;
+  	padding-left: 35px;
+  	cursor: pointer;
+  	// width: 23.5%;
+  	color: $black;
+    // text-transform: uppercase;
+  	margin: 0 8px 8px 0;
+  	user-select: none;
+  	flex: 0 1 45%;
+    font-size: 14px;
+
+    @include flex-row(nowrap, flex-start, center);
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+  }
+
+}
+
+.fancy-checkbox__checkmark {
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border: 1px solid $gray2;
+    transition: all $tr2;
+}
+
+/* On mouse-over, add a grey background color */
+.fancy-checkbox:hover input ~ .fancy-checkbox__checkmark {
+  background-color: #eaeaea;
+}
+
+/* When the checkbox is checked, add a blue background */
+.fancy-checkbox input:checked ~ .fancy-checkbox__checkmark {
+  background-color: $yellow;
+
+  &::after {
+    opacity: 1;  
+  }
+}
+
+/* Style the checkmark/indicator */
+.fancy-checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    opacity: 0;
+    left: 10px;
+    top: 8px;
+    width: 6px;
+    height: 9px;
+    border: solid #49474b;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateX(-50%);
+}

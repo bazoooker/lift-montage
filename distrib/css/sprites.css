@@ -1,0 +1,124 @@
+.i-star-outline_small, .view-cards_active, .view-cards_disabled, .view-list_active, .view-list_disabled, .i-breadcrumb-arrow, .i-caret_down, .i-caret_up, .i-caret-small_down, .i-cart, .i-cart_filled, .i-check-filter, .i-checkmark, .i-lock, .i-mail, .i-phone, .i-pin, .i-search, .i-star, .i-star-filled_small{
+	background: url(sprites.png) no-repeat;
+}
+
+.i-star-outline_small{
+	background-position: -68px -75px ;
+	width: 20px;
+	height: 20px;
+}
+
+.view-cards_active{
+	background-position: -28px -197px ;
+	width: 17px;
+	height: 17px;
+}
+
+.view-cards_disabled{
+	background-position: -28px -176px ;
+	width: 17px;
+	height: 17px;
+}
+
+.view-list_active{
+	background-position: -3px -197px ;
+	width: 19px;
+	height: 15px;
+}
+
+.view-list_disabled{
+	background-position: -3px -177px ;
+	width: 19px;
+	height: 15px;
+}
+
+.i-breadcrumb-arrow{
+	background-position: -3px -150px ;
+	width: 13px;
+	height: 7px;
+}
+
+.i-caret_down{
+	background-position: -3px -131px ;
+	width: 12px;
+	height: 7px;
+}
+
+.i-caret_up{
+	background-position: -3px -118px ;
+	width: 12px;
+	height: 7px;
+}
+
+.i-caret-small_down{
+	background-position: -21px -131px ;
+	width: 10px;
+	height: 6px;
+}
+
+.i-cart{
+	background-position: -147px -4px ;
+	width: 26px;
+	height: 25px;
+}
+
+.i-cart_filled{
+	background-position: -113px -3px ;
+	width: 28px;
+	height: 26px;
+}
+
+.i-check-filter{
+	background-position: -36px -127px ;
+	width: 12px;
+	height: 10px;
+}
+
+.i-checkmark{
+	background-position: -78px -4px ;
+	width: 26px;
+	height: 18px;
+}
+
+.i-lock{
+	background-position: -54px -2px ;
+	width: 20px;
+	height: 26px;
+}
+
+.i-mail{
+	background-position: -43px -52px ;
+	width: 20px;
+	height: 16px;
+}
+
+.i-phone{
+	background-position: -22px -52px ;
+	width: 16px;
+	height: 16px;
+}
+
+.i-pin{
+	background-position: -4px -51px ;
+	width: 14px;
+	height: 20px;
+}
+
+.i-search{
+	background-position: -31px -4px ;
+	width: 19px;
+	height: 20px;
+}
+
+.i-star{
+	background-position: -2px -1px ;
+	width: 24px;
+	height: 24px;
+}
+
+.i-star-filled_small{
+	background-position: -68px -51px ;
+	width: 20px;
+	height: 20px;
+}
+

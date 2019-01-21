@@ -1,0 +1,195 @@
+// NORMALIZE
+@import "base/normalize";
+
+// LIBS
+// @import "base/assets/libs";
+
+
+// SASS BASE
+@import "base/sass/mixin";
+@import "base/sass/var";
+
+
+// TYPOGRAPHY
+@import "base/typography/fonts";
+@import "base/typography/typography";
+
+
+// GRID
+@import "base/grid/grid";
+
+
+// PAGE TEMPLATE
+@import "block/standard/template/page-header";
+@import "block/standard/template/mobile-header";
+@import "block/standard/template/page-footer";
+@import "block/standard/template/page-wrapper"; // block pushing footer to the bottom of the page
+@import "block/standard/template/content"; // <main class="page-content">
+@import "block/standard/template/container"; // centered container 1200px wide
+@import "block/standard/template/inner-page"; 		
+
+@import "block/standard/template/sticky-header/sticky-header"; // centered container 1200px wide
+
+
+//UNIVERSAL
+// @import "block/standard/universal/accordeon/accordeon";
+// @import "block/standard/universal/breadcrumbs/breadcrumbs";
+@import "block/standard/universal/btn/btn";
+@import "block/standard/universal/checkbox/checkbox";
+@import "block/standard/universal/select/nice-select-prefixed";
+@import "block/standard/universal/cta/cta";
+@import "block/standard/universal/dropdown/dropdown";
+@import "block/standard/universal/feature/feature";
+@import "block/standard/universal/hero/hero";
+@import "block/standard/universal/icon/icon";
+@import "block/standard/universal/legal/legal";
+@import "block/standard/universal/logo/logo";
+@import "block/standard/universal/made-by/made-by";
+@import "block/standard/universal/modal/modal";
+@import "block/standard/universal/modal/overlay";
+@import "block/standard/universal/nav/nav";
+@import "block/standard/universal/menu/menu";
+// @import "block/standard/universal/pagination/pagination";
+@import "block/standard/universal/photo/photo";
+// @import "block/standard/universal/search/search";
+// @import "block/standard/universal/tabs/tabs";
+// @import "block/standard/universal/tooltip/tooltip";
+@import "block/standard/universal/to-top/to-top";
+// @import "block/standard/universal/user-options/user-options";
+
+// запись на прием
+@import "block/custom/signup/signup";
+@import "block/custom/signup-form/signup-form";
+
+//CUSTOM
+// @import "block/custom/fav-num/fav-num";
+// @import "block/custom/shop-option/shop-option";
+// @import "block/custom/search-form/search-form";
+@import "block/custom/product-thumb/product-thumb";
+// @import "block/custom/product-modal/product-modal";
+// @import "block/custom/product-controls/product-controls";
+
+@import "block/custom/product-lead/product-lead";
+@import "block/custom/product-feature/product-feature";
+
+@import "block/custom/partner-thumb/partner-thumb";
+
+@import "block/custom/partners/partners";
+@import "block/custom/icon-text/icon-text";
+
+@import "block/custom/news/news";
+@import "block/custom/news-thumb/news-thumb";
+@import "block/custom/product-controls-horiz/product-controls-horiz";
+
+// E-SHOP BLOCKS
+// @import "block/standard/e-shop/basket/basket";
+
+// @import "block/standard/e-shop/brand-holder/brand-holder";
+// @import "block/standard/e-shop/brand-select/brand-select";
+// @import "block/standard/e-shop/brands-slider/brands-slider";
+// @import "block/standard/e-shop/catalog-link/catalog-link";
+// @import "block/standard/e-shop/catalog-list/catalog-list";
+// @import "block/standard/e-shop/catalog-nav/catalog-nav";
+// @import "block/standard/e-shop/catalog-slider/catalog-slider";
+// @import "block/standard/e-shop/category/category";
+// @import "block/standard/e-shop/filter-category/filter-category";
+// @import "block/standard/e-shop/filters/filters";
+// @import "block/standard/e-shop/product/product";
+// @import "block/standard/e-shop/products/products";
+// @import "block/standard/e-shop/product-detail/product-detail";
+// @import "block/standard/e-shop/product-detail-heading/product-detail-heading";
+// @import "block/standard/e-shop/product-list/product-list";
+// @import "block/standard/e-shop/product-category-list/product-category-list";
+// @import "block/standard/e-shop/product-list-controls/product-list-controls";
+// @import "block/standard/e-shop/product-logo/product-logo";
+// @import "block/standard/e-shop/quantity-counter/quantity-counter";
+// @import "block/standard/e-shop/sort/sort";
+
+// @import "block/standard/e-shop/filter-price/filter-price";
+// @import "block/standard/e-shop/filter-manufacturer/filter-manufacturer";
+// @import "block/standard/e-shop/filter-manuf-series/filter-manuf-series";
+// @import "block/standard/e-shop/filter-type/filter-type";
+
+// @import "block/standard/e-shop/ad/ad";
+
+// @import "block/standard/e-shop/view/view";
+// @import "block/standard/e-shop/sort/sort";
+
+// MISC
+// @import "block/standard/misc/grtyoutube-popup";
+@import "block/standard/misc/helper";
+
+// libs
+@import "assets/libs/animate";
+// @import "assets/libs/ion-rangeslider";
+
+
+
+// SWIPER
+@import "block/swiper/swiper";
+@import "block/swiper/slide-category";
+@import "block/swiper/slide-content";
+
+
+
+
+
+
+
+.page-header {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+	z-index: 2;
+
+}
+
+.goto-link {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #efefef;
+	margin: 10px 30px;
+	cursor: pointer;
+}
+
+
+.hero {
+	height: 100vh;
+
+	@include flex-row(nowrap,flex-start,center);
+	@include bg-cover;
+
+	// background-image: url(/img/bg/hero_min.jpg);
+}
+
+.section {
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+	background-color: $red;
+	overflow: hidden;
+	transition: 800ms ease-in-out;
+
+	transform: translateX(-101%);
+
+	&:nth-of-type(even) {
+		background-color: $blue;
+		transform: translateX(-101%);
+	}
+
+	&:nth-of-type(even) {
+		background-color: $blue;
+		transform: translateX(101%);
+	}
+
+	&.section_active {
+		width: 100%;
+		transform: translateX(0);
+	}
+}

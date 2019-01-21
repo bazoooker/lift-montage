@@ -1,0 +1,64 @@
+.arrow-down, .arrow-up, .caret-left-big, .caret-left-big-blue, .caret-right-big, .caret-right-big-blue, .clock, .mail, .map-pin-small, .tel{
+	background: url(sprites.png) no-repeat;
+}
+
+.arrow-down{
+	background-position: -13.000007629394531px -170.00892639160156px ;
+	width: 13px;
+	height: 10px;
+}
+
+.arrow-up{
+	background-position: -14.000007629394531px -195.00892639160156px ;
+	width: 13px;
+	height: 10px;
+}
+
+.caret-left-big{
+	background-position: -59.000022888183594px -38.008941650390625px ;
+	width: 17px;
+	height: 32px;
+}
+
+.caret-left-big-blue{
+	background-position: -25px -1px ;
+	width: 17px;
+	height: 32px;
+}
+
+.caret-right-big{
+	background-position: -37.00000762939453px -38.008941650390625px ;
+	width: 17px;
+	height: 32px;
+}
+
+.caret-right-big-blue{
+	background-position: 0 0;
+	width: 17px;
+	height: 32px;
+}
+
+.clock{
+	background-position: -128.00000762939453px -121.00892639160156px ;
+	width: 17px;
+	height: 17px;
+}
+
+.mail{
+	background-position: -64.00000762939453px -134.00892639160156px ;
+	width: 18px;
+	height: 14px;
+}
+
+.map-pin-small{
+	background-position: -17.00000762939453px -131.00892639160156px ;
+	width: 12px;
+	height: 17px;
+}
+
+.tel{
+	background-position: -2px -42px ;
+	width: 17px;
+	height: 17px;
+}
+

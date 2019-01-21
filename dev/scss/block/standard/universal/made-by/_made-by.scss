@@ -1,0 +1,75 @@
+
+// block
+.made-by {
+    color: #fff;
+
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    transition: 400ms;
+    &:after,
+    &:before {opacity: 0;}
+
+    &:before {
+        @include pseudo;
+        top: 8px;
+        right: -24px;
+        transform: translateX(150%);
+
+        width: 12px;
+        height: 4px;
+        background-color: $yellow;
+        transition: 300ms;
+    }
+
+    &:after {
+        @include pseudo;
+        top: -8px;
+        right: -16px;
+        transform: translateX(-50%);
+
+        width: 4px;
+        height: 12px;
+        background-color: $yellow;
+        transition: 300ms;
+    }
+    &:visited {
+        color: #fff;
+    }
+    &:hover {
+        color: $yellow;
+        text-decoration: none;
+        
+        &:before {
+            transform: translateX(-50%);
+        }
+        &:after {
+            top: 4px;
+        }
+
+        &:after,
+        &:before {opacity: 1;}
+    }
+}
+
+// elements
+
+
+.made-by__link {
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    padding: 1.8rem 0 0 0;
+    transition: 400ms;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.yellow {
+    color: $yellow;
+}
+
