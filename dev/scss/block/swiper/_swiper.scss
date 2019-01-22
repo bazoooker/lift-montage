@@ -32,9 +32,6 @@
 .swiper-hero {
 	position: relative;
 	overflow: hidden;
-	height: 520px;
-	padding-bottom: 60px;
-	margin-bottom: 60px;
 	.swiper-slide {
 		@include bg-cover;
 		.container {
@@ -62,15 +59,47 @@
 			}
 		}
 	}
+}
 
-	// &::before {
-	// 	@include pseudo;
-	// 	left: 0;
-	// 	bottom: -200px;
-	// 	height: 200px;
-	// 	width: 100%;
-	// 	background-color: red;
-	// }
+.swiper-hero__arrows {
+	position: absolute;
+	bottom: 135px;
+	left: 0;
+	width: 60px;
+	height: 35px;
+
+	.swiper-button-next.hero-next {
+		background-image: none;
+		width: 17px;
+		height: 32px;
+		margin-top: -17px;
+		right: 0;
+	}
+	.swiper-button-prev.hero-prev {
+		background-image: none;
+		width: 17px;
+		height: 32px;
+		margin-top: -17px;
+		left: 0;
+	}
+
+}
+
+.swiper-hero__pagination {
+	position: absolute;
+	bottom: 80px;
+	left: 0;
+	width: 60px;
+	height: 35px;
+	color: #fff;
+	font-size: 22px;
+
+	span {
+		color: #fff;
+		font-size: 22px;
+		font-weight: bold;
+		letter-spacing: -.5px;
+	}
 }
 
 .swiper-hero__offer	{

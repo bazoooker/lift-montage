@@ -8,54 +8,59 @@ $(window).scroll(function() {
 });
 
 
-
+var canScroll = true;
 
 $(window).bind('mousewheel DOMMouseScroll', function(event){
 
-    // console.log(canScroll);
+    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0 ) {
 
-    // var canScroll = true;
-    // if(canScroll == true) {
+            console.log(canScroll);
 
-        if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-                var curActiveSlide = $('.section_active').index();
-                    
-                if ( curActiveSlide != 0 ) {
-                    console.log('not first');
-                    $('.section_active').prev().addClass('section_active');
-                    $('.section').eq(curActiveSlide).removeClass('section_active');
-                } else {
-                    console.log('first');
-                }
-            // setTimeout(function(){
-                // alert("Boom!");
-            // }, 2000);
-
-        }
-        else {
             var curActiveSlide = $('.section_active').index();
-            var lastSlide = $('.section').length;
-
-            if ( curActiveSlide != lastSlide-1 ) {
-                console.log('not last');
-                console.log(lastSlide);
-                console.log(curActiveSlide);
-                $('.section_active').next().addClass('section_active');
-                $('.section').eq(curActiveSlide).removeClass('section_active');
-            } else {
-                console.log('last');
                 
+            if ( curActiveSlide != 0 && canScroll ) {
+                canScroll=false;
+                // console.log('not first');
+                $('.section_active').prev().addClass('section_active');
+                $('.section').eq(curActiveSlide).removeClass('section_active');
+
+                setTimeout(function() {
+                    canScroll=true;
+                    console.log('can scroll');
+                }, 100);
+
+            } else {
+                console.log('first');
             }
+    }
+
+    else {
+        console.log(canScroll);
+
+        var curActiveSlide = $('.section_active').index();
+        var lastSlide = $('.section').length;
+
+        if ( curActiveSlide != lastSlide-1 && canScroll ) {
+            canScroll=false;
+
+            $('.section_active').next().addClass('section_active');
+            $('.section').eq(curActiveSlide).removeClass('section_active');
+
+            setTimeout(function() {
+                canScroll=true;
+                console.log('can scroll');
+            }, 100);
+
+        } else {
+            console.log('last');
             
         }
-    // }
+        
+    }
 });
 
 
 $(document).ready(function(){
-
-
-        
 
 
         $('.js-goto-section').on('click', function(){
@@ -66,12 +71,62 @@ $(document).ready(function(){
             $('.section#'+sectionID).addClass('section_active');
         })
 
+
         var swiper = new Swiper('.swiper-hero', {
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
+            pagination: {
+                el: '.hero-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
+
+
+        var swiper = new Swiper('.swiper-sertificates', {
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+
+
+
+        var teamThumbs = new Swiper('.section-team__team-thumbs', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var teamHero = new Swiper('.section-team__team-hero', {
+            spaceBetween: 10,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+              swiper: galleryThumbs
+            }
+        });
+
+
+        var swiperObjects = new Swiper('.swiper-sertificates', {
+            slidesPerView: 3,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        
 
 
 

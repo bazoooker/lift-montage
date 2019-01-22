@@ -19,151 +19,71 @@
 	@include center;
 	transition: $tr2;
 }
-
-.i-star-outline_small, .view-cards_active, .view-cards_disabled, .view-list_active, .view-list_disabled, .i-breadcrumb-arrow, .i-caret_down, .i-caret_up, .i-caret-small_down, .i-cart, .i-cart_filled, .i-check-filter, .i-checkmark, .i-lock, .i-mail, .i-phone, .i-pin, .i-search, .i-star, .i-star-filled_small{
+.arrow-down, .arrow-up, .caret-left-big, .caret-left-big-blue, .caret-right-big, .caret-right-big-blue, .clock, .mail, .map-pin-small, .tel{
 	background: url(/img/icons/sprites.png) no-repeat;
 }
 
-.i-star-outline_small{
-	background-position: -68px -75px ;
-	width: 20px;
-	height: 20px;
-}
-
-.view-cards_active{
-	background-position: -28px -197px ;
-	width: 17px;
-	height: 17px;
-}
-
-.view-cards_disabled{
-	background-position: -28px -176px ;
-	width: 17px;
-	height: 17px;
-}
-
-.view-list_active{
-	background-position: -3px -197px ;
-	width: 19px;
-	height: 15px;
-}
-
-.view-list_disabled{
-	background-position: -3px -177px ;
-	width: 19px;
-	height: 15px;
-}
-
-.i-breadcrumb-arrow{
-	background-position: -3px -150px ;
+.arrow-down{
+	background-position: -13.000007629394531px -170.00892639160156px ;
 	width: 13px;
-	height: 7px;
-}
-
-.i-caret_down{
-	background-position: -3px -131px ;
-	width: 12px;
-	height: 7px;
-}
-
-.i-caret_up{
-	background-position: -3px -118px ;
-	width: 12px;
-	height: 7px;
-}
-
-.i-caret-small_down{
-	background-position: -21px -131px ;
-	width: 10px;
-	height: 6px;
-}
-
-.i-cart{
-	background-position: -147px -4px ;
-	width: 26px;
-	height: 25px;
-}
-	.i-cart__num {
-		position: absolute;
-	    top: -3px;
-	    right: -4px;
-	    width: 20px;
-	    height: 20px;
-	    background-color: black;
-	    border-radius: 50%;
-	    color: #fff;
-	    font-style: normal;
-	    text-align: center;
-	    line-height: 18px;
-	    font-size: 12px;
-	    -webkit-transform: translateY(-4px) translateX(4px);
-	    -ms-transform: translateY(-4px) translateX(4px);
-	    transform: translateY(-4px) translateX(4px);
-	    -webkit-transition: 250ms;
-	    -o-transition: 250ms;
-	    transition: 250ms;
-	    letter-spacing: -1px;
-	}
-
-.i-cart_filled{
-	background-position: -113px -3px ;
-	width: 28px;
-	height: 26px;
-}
-
-.i-check-filter{
-	background-position: -36px -127px ;
-	width: 12px;
 	height: 10px;
 }
 
-.i-checkmark{
-	background-position: -78px -4px ;
-	width: 26px;
-	height: 18px;
+.arrow-up{
+	background-position: -14.000007629394531px -195.00892639160156px ;
+	width: 13px;
+	height: 10px;
 }
 
-.i-lock{
-	background-position: -54px -2px ;
-	width: 20px;
-	height: 26px;
+.caret-left-big{
+	background-position: -59.000022888183594px -38.008941650390625px ;
+	width: 17px;
+	height: 32px;
 }
 
-.i-mail{
-	background-position: -43px -52px ;
-	width: 20px;
-	height: 16px;
+.caret-left-big-blue{
+	background-position: -25px -1px ;
+	width: 17px;
+	height: 32px;
 }
 
-.i-phone{
-	background-position: -22px -52px ;
-	width: 16px;
-	height: 16px;
+.caret-right-big{
+	background-position: -37.00000762939453px -38.008941650390625px ;
+	width: 17px;
+	height: 32px;
 }
 
-.i-pin{
-	background-position: -4px -51px ;
-	width: 14px;
-	height: 20px;
+.caret-right-big-blue{
+	background-position: 0 0;
+	width: 17px;
+	height: 32px;
 }
 
-.i-search{
-	background-position: -31px -4px ;
-	width: 19px;
-	height: 20px;
+.clock{
+	background-position: -128.00000762939453px -121.00892639160156px ;
+	width: 17px;
+	height: 17px;
 }
 
-.i-star{
-	background-position: -2px -1px ;
-	width: 24px;
-	height: 24px;
+.mail{
+	background-position: -64.00000762939453px -134.00892639160156px ;
+	width: 18px;
+	height: 14px;
 }
 
-.i-star-filled_small{
-	background-position: -68px -51px ;
-	width: 20px;
-	height: 20px;
+.map-pin-small{
+	background-position: -17.00000762939453px -131.00892639160156px ;
+	width: 12px;
+	height: 17px;
 }
+
+.tel{
+	background-position: -2px -42px ;
+	width: 17px;
+	height: 17px;
+}
+
+
 
 
 

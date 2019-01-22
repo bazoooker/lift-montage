@@ -1,0 +1,41 @@
+// компоненты
+
+.lead {
+    position: relative;
+    padding: 90px 70px 210px 0;
+    border-right: 2px solid #fff;
+
+    &::before {
+        @include pseudo;
+        right: 0;
+        top: 0;
+        height: 40px;
+        width: 92%;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+    }
+
+    &::after {
+        @include pseudo;
+        right: 0;
+        bottom: 0;
+        height: 40px;
+        width: 92%;
+        border-bottom: 2px solid #fff;
+        border-left: 2px solid #fff;
+    }
+}
+
+.lead__caption {
+    font-size: 34px;
+    color: #fff;
+    text-transform: uppercase;
+
+    span {
+        font-size: 49px;
+    }
+}
+.lead__description {
+    color: #fff;
+    font-weight: 200;
+}

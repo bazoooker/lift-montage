@@ -49,6 +49,7 @@
 @import "block/standard/universal/modal/overlay";
 @import "block/standard/universal/nav/nav";
 @import "block/standard/universal/menu/menu";
+@import "block/standard/universal/lead/lead";
 // @import "block/standard/universal/pagination/pagination";
 @import "block/standard/universal/photo/photo";
 // @import "block/standard/universal/search/search";
@@ -66,6 +67,7 @@
 // @import "block/custom/shop-option/shop-option";
 // @import "block/custom/search-form/search-form";
 @import "block/custom/product-thumb/product-thumb";
+@import "block/custom/section-hero/section-hero";
 // @import "block/custom/product-modal/product-modal";
 // @import "block/custom/product-controls/product-controls";
 
@@ -136,17 +138,6 @@
 
 
 
-.page-header {
-	position: fixed;
-	width: 100%;
-	height: 60px;
-	left: 0;
-	top: 0;
-	background-color: #fff;
-	z-index: 2;
-
-}
-
 .goto-link {
 	display: inline-block;
 	padding: 10px 15px;
@@ -156,14 +147,7 @@
 }
 
 
-.hero {
-	height: 100vh;
 
-	@include flex-row(nowrap,flex-start,center);
-	@include bg-cover;
-
-	// background-image: url(/img/bg/hero_min.jpg);
-}
 
 .section {
 	position: fixed;
@@ -172,21 +156,11 @@
 
 	width: 100%;
 	height: 100%;
-	background-color: $red;
 	overflow: hidden;
 	transition: 800ms ease-in-out;
 
 	transform: translateX(-101%);
 
-	&:nth-of-type(even) {
-		background-color: $blue;
-		transform: translateX(-101%);
-	}
-
-	&:nth-of-type(even) {
-		background-color: $blue;
-		transform: translateX(101%);
-	}
 
 	&.section_active {
 		width: 100%;

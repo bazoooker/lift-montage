@@ -32,7 +32,7 @@
 
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700,900" rel="stylesheet">
 
         <!-- favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -76,9 +76,21 @@
         <header class="page-header">
 
             <div class="container">
-                <span class="goto-link js-goto-section" data-section="section1">секция один</span>&nbsp;
+                <div class="btn-burger js-menu-controls">
+                    <i class="btn-burger__bar"></i>
+                    <i class="btn-burger__bar"></i>
+                    <i class="btn-burger__bar"></i>
+                </div>
+                <a href="/" class="logo logo_full"></a>
+                <a href="tel:+73852722008" class="phone">+7 3852 722 008</a>
+                <a href="/" class="btn btn_main btn_size-m"> обратная связь</a>
+
+
+
+
+            <!--     <span class="goto-link js-goto-section" data-section="section1">секция один</span>&nbsp;
                 <span class="goto-link js-goto-section" data-section="section2">секция два</span>&nbsp;
-                <span class="goto-link js-goto-section" data-section="section3">секция три</span>
+                <span class="goto-link js-goto-section" data-section="section3">секция три</span> -->
             </div>
             
            
@@ -93,29 +105,384 @@
         <!-- PAGE CONTENT BEGIN -->            
         <main class="content" role="main">
 
-        <section id="section1" class="section section_active">
-            <div class="hero">
-                <div class="container">
-                    <h1>bla bla</h1>
-                </div>
-            </div>
-        </section>
+            <section id="section1" class="section section_active">
+                <!-- <div class="section-hero" style="background-image: url(/img/bg/hero_min.jpg);"> -->
+                <div class="section-hero">
+                    <div class="container">
+                        <div class="section-hero__lead">
 
-        <section id="section2" class="section">
-            <div class="hero">
-                <div class="container">
-                    <h1>bla bla</h1>
-                </div>
-            </div>
-        </section>
+                            <div class="lead">
+                                <div class="swiper-container swiper-hero">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <p class="lead__caption font-oswald">
+                                                с нами <span>ВЫ</span> в безопасности
+                                            </p>
+                                            <p class="lead__description">
+                                                За многие годы мы накопили большой опыт работы и получили<br/> 
+                                                множество благодарностей от наших клиентов, как от крупных<br/>
+                                                заказчиков так и от частных лиц.
+                                            </p>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <p class="lead__caption font-oswald">
+                                                обслужили <span>954</span> лифта
+                                            </p>
+                                            <p class="lead__description">
+                                                За многие годы мы накопили большой опыт работы и получили<br/> 
+                                                множество благодарностей от наших клиентов, как от крупных<br/>
+                                                заказчиков так и от частных лиц.
+                                            </p>
+                                        </div>
 
-        <section id="section3" class="section">
-            <div class="hero">
-                <div class="container">
-                    <h1>bla bla</h1>
+                                     </div>
+
+                                </div>
+
+                                <div class="swiper-hero__arrows">
+                                    <div class="swiper-button-prev hero-prev">
+                                        <i class="i caret-right-big"></i>
+                                    </div>
+                                    <div class="swiper-button-next hero-next">
+                                        <i class="i caret-left-big"></i>
+                                    </div>
+                                </div>
+                                <div class="swiper-hero__pagination">
+                                    <div class="swiper-pagination hero-pagination"></div> 
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <span class="section-hero__arrow">
+                        
+                    </span>
+
                 </div>
-            </div>
-        </section>
+            </section>
+
+
+            <section id="section2" class="section">
+                <div class="section-features">
+                    <div class="container">
+                        <h2 class="text-center color_main">
+                            Преимущества
+                        </h2>
+
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img src="/img/icons/advantage-1.png" alt="">
+                                    <p>Большой склад <br/>запчастей</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img src="/img/icons/advantage-2.png" alt="">
+                                    <p>Cобственная <br/>лаборатория</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img src="/img/icons/advantage-3.png" alt="">
+                                    <p>Система контроля <br/>качества</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img src="/img/icons/advantage-4.png" alt="">
+                                    <p>Обслуживание <br/>подъемников</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img src="/img/icons/advantage-5.png" alt="">
+                                    <p>Гарантия на выполненные <br/>работы</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="text-center">
+                                    <img src="/img/icons/advantage-6.png" alt="">
+                                    <p>Собственный <br/>ремонтный цех</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section id="section3" class="section">
+                <div class="section-services">
+                    <div class="section-services__bg">
+                    <div class="container">
+                        <h2 class="color_white">
+                            Услуги
+                        </h2>
+
+                        <div class="section-services__lead">
+                            <div class="swiper-container swiper-hero">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <p class="section-hero__caption">
+                                            Ремонт и обслуживание лифтов
+                                        </p>
+                                        <p class="hero__description">
+                                            За многие годы мы накопили большой опыт работы и получили 
+                                            множество благодарностей от наших клиентов, как от крупных
+                                            заказчиков так и от частных лиц.
+                                        </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <p class="section-hero__caption">
+                                            с нами ВЫ в безопасности
+                                        </p>
+                                        <p class="section-hero__description">
+                                            За многие годы мы накопили большой опыт работы и получили 
+                                            множество благодарностей от наших клиентов, как от крупных
+                                            заказчиков так и от частных лиц.
+                                        </p>
+                                    </div>
+                                 </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="section4" class="section">
+                <div class="section-about">
+                    <div class="container">
+                        <h2 class="color_blue">
+                            О компании
+                        </h2>
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="text-big">
+                                    ООО «ЛифтМонтажСервис» занимается монтажом и эксплуатацией лифтов с 1979 года.
+                                </p>
+                                <p>
+                                    Наличие производственно-технической базы, штата высококвалифицированного инженерного и рабочего персонала. Фирма за годы своей деятельности выполняла нижеуказанные работы, как при ведении гражданского и производственного строительства, так и на действующих объектах (жилищных, коммерческих, производственных, здравоохранения и т.п.).
+                                </p>    
+                                <p>
+                                    Настоящее Свидетельство НП СРО МОЛО подтверждает допуск к монтажным и пусконаладочным работам подъемно-транспортного
+                                    оборудования (лифтов, эскалаторов, подъемников) Свидетельство № 0653-2002-775861114
+                                </p>    
+                            </div>
+                            <div class="col-6">
+                                <div class="swiper-container swiper-sertificates">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a class="photo" data-lightbox="sert">
+                                                <img src="img/sert-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="photo" data-lightbox="sert">
+                                                <img src="img/sert-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="photo" data-lightbox="sert">
+                                                <img src="img/sert-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="photo" data-lightbox="sert">
+                                                <img src="img/sert-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section id="section5" class="section">
+                <div class="section-team">
+                    <div class="container">
+                        <h2 class="color_white">
+                            Наш коллектив
+                        </h2>
+                        
+                        <!-- Swiper -->
+                        <div class="swiper-container section-team__team-hero">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
+                              <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
+                        </div>
+                        <div class="swiper-container section-team__team-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image:url(img/sert-1.jpg)"></div>
+                                <div class="swiper-slide" style="background-image:url(img/bg/dude_min.jpg)"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+           
+
+           <section id="section6" class="section">
+                <div class="section-objects">
+                    <div class="container">
+                        <h2 class="color_blue">
+                            Наши объекты
+                        </h2>
+                        
+                        <div class="swiper-container swiper-objects">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="object-thumb">
+                                        <div class="object__img" style="background-image: url(img/bg/object-1_min.jpg);"></div>
+                                        <p class="object__name">Квартал 2000</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="object-thumb">
+                                        <div class="object__img" style="background-image: url(img/bg/object-2_min.jpg);"></div>
+                                        <p class="object__name">Квартал 2000</p>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="object-thumb">
+                                        <div class="object__img" style="background-image: url(img/bg/object-2_min.jpg);"></div>
+                                        <p class="object__name">Квартал 2000</p>
+                                    </a>
+                                </div>
+
+                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="section7" class="section">
+                <div class="section-form">
+                    <div class="container">
+                        <h2 class="color_white">
+                            Свяжитесь с нами
+                        </h2>
+
+                        <form class="signup-form" action=''  data-wow-delay="1100ms" data-wow-duration="700ms">
+                            <div class="signup-form__label">
+                                <input type="text" class="js-floating-label">
+                                <span class="signup-form__floating-placeholder">Как к вам обращаться</span>
+                            </div>
+                            <div class="signup-form__label">
+                                <input type="text" class="js-floating-label signup-form__masked-tel">
+                                <span class="signup-form__floating-placeholder">Ваш контактный номер</span>
+                            </div>
+                            <div class="signup-form__label">
+                                <input type="text" class="js-floating-label">
+                                <span class="signup-form__floating-placeholder">Комментарий <small>(не обязательно)</small></span>
+                            </div>
+                            
+                            <div class="text-center mb-20">
+                                <a href="#" class="btn btn_main btn_size-m">Отправить</a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section id="section8" class="section">
+                <div class="section-contacts">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11333.167455993938!2d83.65152544555363!3d53.33421626520983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda24bd8177ed7%3A0x2058ffa43ba6a908!2z0YPQuy4g0J_QvtC_0L7QstCwLCAxNDcsINCR0LDRgNC90LDRg9C7LCDQkNC70YLQsNC50YHQutC40Lkg0LrRgNCw0LksIDY1NjA1OA!5e0!3m2!1sru!2sru!4v1548145425144" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="container">
+
+                        <h2 class="color_blue">
+                            Контакты
+                        </h2>
+
+                        <div class="section-contacts__contact-block">
+                            <p>
+                                <i class="i i-location"></i>
+                                Барнаул<br/>ул. Попова, 147
+                            </p>
+                            <p>
+                                <i class="i i-tel"></i>
+                                +7 3852 722 008
+                            </p>
+                            <p>
+                                <i class="i i-email"></i>
+                                info@liftmontagservis.ru
+                            </p>
+                            <p>
+                                <i class="i i-email"></i>
+                                пн — пт: с 8:00 до 17:00<br/>
+                                сб — вс: выходной
+                            </p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <footer class="page-footer">
+                    
+                    <div class="page-footer__legal">
+                        <div class="container">
+                            <span class="page-footer__copy">
+                                ООО «лифтмонтажсервис» ©
+                            </span>
+                            <span class="page-footer__by ">Разработка сайта - <a class="made-by uppercase">e1me<span class="yellow">d</span>ia</a></span>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+
+
+
+            <aside class="nav">
+                <div class="nav__numbers">
+                    <span class="nav__number">1</span>
+                    <span class="nav__number">2</span>
+                    <span class="nav__number">3</span>
+                    <span class="nav__number">4</span>
+                    <span class="nav__number">5</span>
+                </div>
+                <div class="nav__arrows">
+                    <span class="nav__next">
+                        <i class="i i-arrow-up"></i>
+                    </span>
+                    <span class="nav__prev">
+                        <i class="i i-arrow-up"></i>
+                    </span>
+                </div>
+            </aside>
 
 
 
@@ -126,17 +493,6 @@
 
 
 
-        <footer class="page-footer">
-            
-            <div class="page-footer__legal">
-                <div class="container">
-                    <span class="page-footer__copy">
-                        ООО «лифтмонтажсервис» ©
-                    </span>
-                    <span class="page-footer__by ">Разработка сайта - <a class="made-by uppercase">e1me<span class="yellow">d</span>ia</a></span>
-                </div>
-            </div>
-        </footer>
 
 
                     

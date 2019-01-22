@@ -23,181 +23,31 @@
 
 
 
-
-
-
-
 // styles
 .btn_main {
 	// background-color: $color_main;
-	background-color: $yellow;
-	color: $black;
-	border: 2px solid $yellow;
-	transition: all $tr2;
+	background-color: $red;
+	color: #fff;
+	transition: all $tr1;
+	border-radius: 11px;
 	&:active,
-	&:visited 	{ color: $black; }
+	&:visited 	{ color: #fff; }
 	&:hover 	{ 
-		background-color: #fff;
-		border: 2px solid $black; 
+		background-color: $blue;
 	}
 	&:focus 	{}
 }
-
-
-// styles
-.btn_secondary {
-	background-color: #ededed;
-	color: #006eb3 !important;
-	transition: all $tr2;
-	font-size: 16px;
-	font-weight: 400;
-	text-transform: none;
-		border: 2px solid #ededed; 
-	&:active,
-	&:visited 	{ color: #006eb3; }
-	&:hover 	{ 
-		background-color: #fff;
-		border-color: $gray2;
-	}
-	&:focus 	{}
-}
-
-
-
-// .btn_outline {
-// 	background-color: #fff;
-// 	color: $color_main;
-// 	border: 1px solid $color_main;
-// 	&:active,
-// 	&:visited 	{ color: $color_main; }
-// 	&:hover 	{ background-color: $color_main; color: #fff; }
-// 	&:focus 	{}
-// }
-
-// .btn_add-to-cart {
-// 	background-color: #fff;
-// 	color: $color_main;
-// 	border: 1px solid $color_main;
-// 	&:active,
-// 	&:visited 	{ color: $color_main; }
-// 	&:hover 	{ background-color: $color_main; color: #fff; }
-// 	&:focus 	{}
-// }
-
-.btn_icon {
-	position: relative;
-	text-align: center;
-
-	background-color: #fff;
-	color: $color_main;
-	border: 1px solid $color_main;
-	color: $color_main;
-
-	&:visited,
-	&:focus,
-	&:active {
-		color: $color_main;
-	}
-
-	&::before {
-		transition: $tr;
-	}
-
-
-	&.btn_icon-cart 	{
-		&::before {
-			background: url(/img/icons/i-cart.png) $color_main center center no-repeat;
-		}
-		&:hover::before {
-			width: 100%;
-		}
-	}
-	&.btn_icon-call 	{
-		&::before {
-			background: url(/img/icons/i-phone.png) $color_main center center no-repeat;
-		}
-		&:hover::before {
-			width: 100%;
-		}
-	}
-	&.btn_icon-email 	{
-		&::before {
-			background: url(/img/icons/i-envelope.png) $color_main center center no-repeat;
-		}
-		&:hover::before {
-			width: 100%;
-		}
-	}
-	&.btn_icon-submit 	{
-		&::before {
-			background: url(/img/icons/i-submit.png) $color_main center center no-repeat;
-		}
-		&:hover::before {
-			width: 100%;
-		}
-	}
-
-	&.btn_size-l {
-		padding-left: 50px+$gutter*1.75 !important;
-		&::before {
-			@include pseudo;
-			left: 0;
-			top: 0;
-
-			height: 100%;
-			width: 50px;
-			background-size: 25px;
-		}
-	}
-	&.btn_size-m {
-		padding-left: 45px+$gutter*1.5 !important;
-		&::before {
-			@include pseudo;
-			left: 0;
-			top: 0;
-
-			height: 100%;
-			width: 45px;
-			background-size: 20px;
-		}
-	}
-	&.btn_size-s {
-		padding-left: 40px+$gutter*1.25 !important;
-		&::before {
-			@include pseudo;
-			left: 0;
-			top: 0;
-
-			height: 100%;
-			width: 40px;
-			background-size: 17px;
-		}
-	}
-
-	// &:hover::before {
-	// 	background-color: #fff;
-	// }
-	// &:hover::after {
-	// 	background-color: #fff;
-	// 	background-image: url(/img/icons/i-cart_orange.png);
-	// 	background-position: 70% 50%;
-	// }
-}
-
-
-
 
 
 
 // sizes
-
 .btn_size-l {
 	@include font-kit(17px, 17px, 17px, 16px, 15px);
 	padding: 20px 30px;
 }
 .btn_size-m {
 	@include font-kit(15px, 15px, 14px, 14px, 13px);
-	padding: $gutter/2.2 $gutter*1.5;
+	padding: 18px 28px;
 }
 .btn_size-s {
 	@include font-kit(14px, 14px, 13px, 13px, 12px);
@@ -206,129 +56,16 @@
 
 
 
-
-
-
-
-.btn-catalog {
-	position: relative;
-	display: inline-block;
-	height: 100%;
-	padding: 0 58px 0 80px;
-	margin: 0 $gutter 0 0;
-	background-color: $gray3;
-	color: rgba(255,255,255,.85);
-	@include flex-row(nowrap,flex-start,center);
-    align-items: center;
-    line-height: 1;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: .3px;
-    min-width: 283px;
-    cursor: pointer;
-	transition: $tr2;
-
-    &::before {
-    	@include pseudo;
-    	right: 30px;
-    	top: 50%;
-		transform: translateY(-70%) rotate(45deg);
-
-		width: 8px;
-		height: 8px;
-
-		border-bottom: 2px solid rgba(255,255,255,.85);
-		border-right: 2px solid rgba(255,255,255,.85);
-
-		transition: $tr2;
-		animation-delay: 2s;
-		transition-delay: 2s;
-
-    }
-    
-	// ВЕРНУТЬ
-
-    &:hover {
-    	color: #fff;
-    	background-color: #666666;
-    	&::before {
-    		color: #fff;
-    		animation: arrowBounceDown $tr2 ease;
-    	}
-    	.i-burger__bar {background-color: #fff;}
-    }
-}
-
-.btn-basket {
-	position: relative;
-	@include flex-row(nowrap,flex-start,center);
-	padding: 0 20px 0 60px;
-	height: 100%;
-	flex-grow:0;
-	min-width: 178px;
-	cursor: pointer;
-	transition: $tr2;
-
-	// &::before {
-	// 	@include pseudo;
-	// 	left: 0;
-	// 	bottom: -4px;
-	// 	background-color: $black;		
-	// 	width: 100%;
-	// 	height: 4px;
-	// }
-
-	.i-cart {
-		left: 20px;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-
-	&:hover {
-		background-color: #ffee99;
-	}
-}
-.btn-basket__text {
-	display: inline-block;
-	margin: 0 8px 0 0;
-	font-weight: 600;
-	font-style:normal;
-	text-transform: uppercase;
-	font-size: 16px;
-	color: black;
-}
-
-.btn-basket__total {
-	font-weight: 400;
-	font-style:normal;
-	text-transform: uppercase;
-	font-size: 16px;
-	color: black;
-}
-
-
-
-
-
-
-
-
-
-
 // burger button
-
-
 .btn-burger {
 	@include flex-row(wrap, center, center);
-	width: 60px;
-	flex: 0 0 60px;
-	max-width: 60px; /*IE*/
-	height: 100%;
-	margin: 0 0 0 0;
+	width: 45px;
+	flex: 0 0 45px;
+	max-width: 45px; /*IE*/
+	height: 45px;
+	margin: 0 50px 0 0;
 	cursor: pointer;
     transition: 200ms;
-    padding: 16px 16px;
 
     // change
 	background-color: transparent;
@@ -337,7 +74,7 @@
 	width: 100%;
     height: 2px;
     margin-bottom: 0px;
-	background-color: $black;
+	background-color: #fff;
     transition: $tr;
 
     // 	&:last-child { margin-bottom: 0; }
@@ -361,111 +98,6 @@
     // 	transition: $tr;
     // }
 }
-
-
-
-
-
-
-
-
-// .btn_one-click {
-// 	flex: 1 1 50%;
-
-// 	@include flex-row(nowrap, flex-start, center);
-// 	background-color: transparent;
-
-// 	padding: .8rem .8rem .8rem .8rem;
-// 	border: 2px solid transparent;
-// 	line-height: 1.8rem;
-// 	transition: $tr;
-
-// 	font-size: 1.1rem;
-// 	text-transform: uppercase;
-
-// 	&:visited span {color: #514f53;}
-// 	&:active span {color: #514f53;}
-
-
-// 	span {
-// 		display: inline-block;
-// 		margin: 0 auto;
-// 		position: relative;
-
-// 		font-size: 1.2rem;
-// 		font-weight: 600;
-// 		text-transform: uppercase;
-// 		color: #514f53;
-// 		transition: $tr;
-
-
-
-// 		&::before {
-// 			@include pseudo;
-// 			width: 100%;
-// 			height: 1px;
-// 			left: 0;
-// 			bottom: -.5rem;
-// 			background-color: $color_font;
-// 			background-color: rgba(0,0,0,.1);
-// 		}
-// 	}
-
-// 	&:hover span::before {
-// 		display: none;
-// 	}
-// 	&:hover span {
-// 		color: #000;
-// 	}
-// 	&:hover {
-// 		background-color: #eaeaea;
-// 	}
-
-// }
-
-
-
-
-.btn_metal {
-	position: relative;
-    background-image: url(/img/bg/bg-btn.jpg);
-    padding: 1rem 3.5rem;
-    font-size: 1.6rem;
-    color: #fff;
-    font-weight: 400;
-
-    &:visited,
-	&:active {
-		color: #fff;
-	}
-
-    &:hover::after {
-    	height: 100%;
-    }
-
-    &::after {
-    	@include pseudo;
-    	left: 0;
-    	top: 0;
-    	width: 100%;
-    	height: 0%;
-    	background-color: rgba(255,255,255,.3);
-
-    	transition: $tr;
-    }
-}
-
-
-
-
-
-
-
-// ======================================================
-
-
-
-
 
 
 

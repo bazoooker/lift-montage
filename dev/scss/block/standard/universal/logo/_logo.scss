@@ -1,20 +1,19 @@
 
 .logo {
 	display: inline-block;
-	flex: 0 0 180px;
-	height: 60px;
-	max-width: 180px;
-	margin: 0 105px 0 0;
+	flex: 0 0 420px;
+	height: 45px;
+	max-width: 420px;
 	text-decoration: none;
 	
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 
-	background-image: url(/img/logo.png); 
+	background-image: url(); 
 	@include bg-contain;
 
-	&.logo_white {
+	&.logo_full {
 		position: relative;
-		background-image: url(/img/logo_white.png); 
+		background-image: url(/img/icons/logo-full-white.png); 
 	}
 }

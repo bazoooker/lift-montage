@@ -309,7 +309,16 @@ ol{
 
 
 .text-small {
-    @include font-kit(16px, 16px, 15px, 15px, 14px);
+    @include font-kit(13px, 12px, 12px, 11px, 11px);
+}
+
+.text-big {
+    @include font-kit(21px, 20px, 19px, 18px, 17px);
+}
+
+
+.font-oswald {
+    font-family: 'Oswald', sans-serif !important;
 }
 
 
