@@ -16,4 +16,14 @@
 		position: relative;
 		background-image: url(/img/icons/logo-full-white.png); 
 	}
+	&.logo_small-blue {
+		position: relative;
+		background-image: url(/img/icons/logo-small-blue.png); 
+		flex: 0 0 80px;
+	}
+	&.logo_small-white {
+		position: relative;
+		background-image: url(/img/icons/logo-small-white.png); 
+		flex: 0 0 80px;
+	}
 }

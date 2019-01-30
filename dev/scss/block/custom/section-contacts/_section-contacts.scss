@@ -1,0 +1,77 @@
+.section-contacts {
+	padding: 120px 0 0 0;
+	.container {
+		position: relative;
+	}
+}
+
+.section-contacts__bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	iframe {
+		width:100%;
+		height: 100%;
+	}
+}
+
+.section-contacts__contact-block {
+	position: absolute;
+	left: 0;
+	bottom: -500px;
+	padding: 80px 20px 80px 35px;
+	width: 35%;
+	background-color: $blue;
+	background-color: rgba(34,83,184,.9);
+
+	color: #fff;
+
+	transition: 500ms;
+	transition-delay: 500ms;
+
+	opacity: 0;
+	transform: translateY(-150px);
+
+	p {
+		position: relative;
+		padding: 0 0 0 20px;
+		@include font-kit (22px,21px,20px,19px,17px);
+		line-height: 1.4;
+
+		i {
+			left: 0;
+			top: 15px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 1450px) {
+	.section-contacts__contact-block {
+		left: 200px;
+	}
+}
+@media screen and (max-width: 1240px) {}
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {
+	.section-contacts {
+		min-height: 700px;
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.section-contacts__contact-block {
+		position: static;
+		width: 100%;
+		height: 400px;
+		margin: 0 0 50px 0;
+	}
+	.section-contacts__bg {
+		position: static;
+		height: 400px;
+	}
+}
+@media screen and (max-width: 568px) {}
+@media screen and (max-width: 413px) {}

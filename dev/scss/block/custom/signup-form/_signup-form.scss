@@ -1,8 +1,6 @@
 .signup-form {
-	// @include flex-row(wrap,space-between,center);
-	// margin: 0 113px 0 -10px;
+	width: 35%;
 	flex-grow: 1;
-	&>.row {margin-bottom: 0}
 
 	a {color: $gray3; text-decoration: underline;}
 }
@@ -11,13 +9,25 @@
 .signup-form__label {
 	position: relative;
 	height: 48px;
-	border: 1px solid $gray2;
+	border-bottom: 2px solid #fff;
 
-	margin: 0 0;
+	margin: 0 0 40px 0;
 	display: block;
+	color: #fff;
+	@include font-kit(21px,20px,18px,17px,16px);
+	font-weight: 300;
+
+	opacity: 0;
+	transform: translateX(-30px);
+	transition: 500ms;
+
+	&:nth-of-type(1) {transition-delay: 200ms;}
+	&:nth-of-type(2) {transition-delay: 300ms;}
+	&:nth-of-type(3) {transition-delay: 400ms;}
+
 
 	&.active {
-		border: 1px solid $yellow;
+		border-bottom: 2px solid $red;
 	}
 
 	input {
@@ -31,6 +41,8 @@
 		padding: 0 20px 0 20px;
 		z-index: 2;
 		background-color: transparent;
+		color: #fff;
+		text-decoration: none;
 	}
 
 	&.half {flex: 0 1 50%; max-width: 50%;}
@@ -49,38 +61,67 @@
 	padding: 0 0 0 20px;
 	transition: 400ms;
 	font-size: 14px;
+	@include font-kit(21px,20px,18px,17px,16px);
+	font-weight: 300;
 
 	&.float {
 		transform: translateY(-90%);
-		font-size: 13px;
-		color: black;
+		font-size: .8em;
+		opacity: .75;
 	}
 }
 
 .signup-form__masked-tel {}
 
-@media screen and (max-width: 1100px) {
-	.signup-form__floating-placeholder {
-		font-size: 13px;
-		padding: 0 0 0 14px;
-	}
-}
+// @media screen and (max-width: 1100px) {
+// 	.signup-form__floating-placeholder {
+// 		font-size: 13px;
+// 		padding: 0 0 0 14px;
+// 	}
+// }
 
-@media screen and (max-width: 992px) {
-	.signup__policy {
-		br {display: none;}
+// @media screen and (max-width: 992px) {
+// 	.signup__policy {
+// 		br {display: none;}
+// 	}
+// 	.signup-form__floating-placeholder {
+// 		font-size: 13px;
+// 		padding: 0 0 0 14px;
+// 	}
+// }
+
+// @media screen and (max-width: 850px) {
+// 	.signup-form {
+// 		.col-6 {
+// 			flex: 1 1 100%;
+// 			max-width: 100%;
+// 		}
+// 	}
+// }
+
+
+@media screen and (max-width: 1450px) {
+	.signup-form__label {
+		height: 40px;
+		margin: 0 0 30px 0;
 	}
 	.signup-form__floating-placeholder {
-		font-size: 13px;
-		padding: 0 0 0 14px;
-	}
-}
-
-@media screen and (max-width: 850px) {
-	.signup-form {
-		.col-6 {
-			flex: 1 1 100%;
-			max-width: 100%;
+		line-height: 36px;
+		font-size: 19px;
+		&.float {
+			transform: translateY(-75%);
+			font-size: .7em;
+			opacity: .65;
 		}
 	}
 }
+@media screen and (max-width: 1240px) {}
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {
+	.signup-form {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 568px) {}
+@media screen and (max-width: 413px) {}

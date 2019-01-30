@@ -1,0 +1,297 @@
+.section {
+	h2:first-of-type {
+		margin: 95px 0;
+	}
+	position: fixed;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition: 300ms ease-in-out;
+	opacity: 0;
+	z-index: -5;
+}
+
+
+
+
+// анимации внутри секций
+
+.section {
+
+	&.section_active {
+		opacity: 1;
+		width: 100%;
+		z-index: 1;
+		
+		
+		// первая секция
+		.lead {
+			opacity: 1 !important;
+			transform: translateX(0) !important;
+
+		}
+		
+		.lead__lift-ropes {
+			&::after {
+				transition-delay: 1600ms;
+				transform: translateY(-105%);
+			}
+			&::before {
+				transition-delay: 1500ms;
+				transform: translateY(-105%);
+			}
+		}
+
+
+
+		// вторая секция
+		.section-features {
+			.col-4 {
+				&:nth-of-type(1) {.icon-text{transition-delay: 0ms;}}
+				&:nth-of-type(2) {.icon-text{transition-delay: 200ms;}}
+				&:nth-of-type(3) {.icon-text{transition-delay: 400ms;}}
+				&:nth-of-type(4) {.icon-text{transition-delay: 600ms;}}
+				&:nth-of-type(5) {.icon-text{transition-delay: 800ms;}}
+				&:nth-of-type(6) {.icon-text{transition-delay: 1000ms;}}
+			}
+		}
+		.icon-text {
+			opacity: 1 !important;
+			transform: translateY(0) !important;
+		}
+
+
+		// третья секция
+		.section-services__bg {
+			&::before {
+				width: 50%;
+			}
+		}
+		.swiper-lead__pagination-big {
+			opacity: .3;
+			transition: 500ms;
+			transition-delay: 1000ms;
+		}
+
+		// четвертая секция
+		.section-about {
+			.col-6 {
+				p {
+					opacity: 1;
+					transform: translateX(0);
+
+				}
+			}
+		}
+		.swiper-sertificates {
+			opacity: 1;
+			transform: translateX(0);	
+		}
+
+
+		// пятая секция
+		.swiper-team-track {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+
+		// шестая секция
+		.swiper-objects,
+		.swiper-objects__arrows {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		// седьмая секция
+		.signup-form__label {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		input.btn {
+			animation: pulse 400ms;
+			animation-delay: 700ms;
+		}
+
+		// восьмая секция
+		.section-contacts__contact-block {
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+	}
+
+}
+
+input.btn {
+	&:hover {
+		box-shadow: 0 0 0 2px white !important;
+	}
+}
+
+@keyframes unfold {
+	0% {}
+	50% {
+		height: 100%;
+	}
+	0% {}
+}
+
+
+
+@media screen and (max-width: 1600px) {
+	.section {
+		h2:first-of-type {
+			margin: 65px 0;
+		}
+
+		// &.section_active {
+			.lead {
+				padding: 70px 40px 190px 0;
+				br {display: none;}
+			}
+			// третья секция
+			.section-services__bg {
+				&::before {
+					width: 51%;
+				}
+			}
+		// }
+	}
+}
+
+
+@media screen and (max-width: 1450px) {
+	.section {
+		h2:first-of-type {
+			margin: 55px 0;
+		}
+
+		&.section_active {
+			// третья секция
+			.section-services__bg {
+				background-position: left center;
+				&::before {
+					width: 70%;
+				}
+			}
+		}
+		.section-services__lead {
+			width: 60% !important;
+			br {display: none;}
+		}
+	}
+}
+@media screen and (max-width: 1240px) {
+	.section {
+		h2:first-of-type {
+			margin: 30px 0;
+		}
+	}
+}
+@media screen and (max-width: 1024px) {
+	.section {
+		h2:first-of-type {
+			margin: 20px 0;
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	.section {
+		h2:first-of-type {
+			margin: 20px 0;
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.section {
+		&.section_active {
+			.lead {
+				padding: 60px 40px 60px 0 !important;
+			}
+		}
+		.section-services__lead {
+			width: 100% !important;
+		}
+	}
+	.section,
+	.section_active {
+		position: relative;
+		left: 0;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+		overflow: visible;
+		transition: 300ms ease-in-out;
+		opacity: 1;
+		z-index: 1;
+		padding: 0 0 75px 0 !important;
+
+		// &:first-of-type {padding-top: 0;}
+
+
+		h2 {margin: 0 0 75px 0 !important; text-align: center;}
+
+		.icon-text,
+		.section-services__bg::before,
+		.section-about .col-6,
+		.swiper-sertificates,
+		.swiper-team-track,
+		.swiper-objects,
+		.swiper-objects__arrows,
+		.signup-form__label,
+		.section-contacts__contact-block,
+		.section-about .col-6 p {
+			// width: 100%;
+			opacity: 1;
+			transform: none;
+		}
+		.section-services__bg::before {
+			width: 100%;
+		}
+		.swiper-lead__pagination-big {
+			opacity: .3;
+			font-size: 95px;
+			top: -60px;
+		}
+
+
+
+		// пятая секция
+		.swiper-team-track {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+
+		// шестая секция
+		.swiper-objects,
+		.swiper-objects__arrows {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		// седьмая секция
+		.signup-form__label {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		input.btn {
+			animation: pulse 400ms;
+			animation-delay: 700ms;
+		}
+
+		// восьмая секция
+		.section-contacts__contact-block {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+}
+@media screen and (max-width: 568px) {}
+@media screen and (max-width: 413px) {}

@@ -5,6 +5,12 @@
     padding: 90px 70px 210px 0;
     border-right: 2px solid #fff;
 
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: 600ms;
+    transition-delay: 500ms;
+
+
     &::before {
         @include pseudo;
         right: 0;
@@ -26,16 +32,80 @@
     }
 }
 
+.lead__lift-ropes {
+    z-index: 3;
+    position: relative;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    &::before{
+        @include pseudo;
+        width: 1px;
+        height: 1000px;
+        bottom: 0;
+        left: 30%;
+        background-color: #fff;
+        opacity: .85;
+        transition: 650ms;
+    }
+
+    &::after{
+        @include pseudo;
+        width: 1px;
+        height: 1000px;
+        bottom: 0;
+        right: 20%;
+        background-color: #fff;
+        opacity: .85;
+        transition: 650ms;
+    }
+}
+
 .lead__caption {
-    font-size: 34px;
+    position: relative;
+    @include font-kit(34px,30px,27px,24px,20px);
+    // font-size: 34px;
     color: #fff;
     text-transform: uppercase;
+    // transition: 300ms;
 
     span {
-        font-size: 49px;
+        opacity: 1;
+    }
+
+    i {
+        // font-size: 49px;
+        @include font-kit(49px,44px,38px,34px,29px);
+        font-style: normal;
     }
 }
 .lead__description {
     color: #fff;
     font-weight: 200;
 }
+
+
+
+@media screen and (max-width: 1450px) {}
+@media screen and (max-width: 1240px) {}
+@media screen and (max-width: 1024px) {
+    .lead {
+        position: relative;
+        padding: 70px 50px 190px 0;
+
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    .lead__lift-ropes {display: none;}
+}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {
+    .lead {
+        padding: 50px 20px 65px 0;
+        br {display: none;}
+    }
+}
+@media screen and (max-width: 568px) {}
+@media screen and (max-width: 413px) {}

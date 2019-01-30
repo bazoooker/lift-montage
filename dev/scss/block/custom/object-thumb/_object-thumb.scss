@@ -1,0 +1,33 @@
+.object-thumb {
+	display: block;
+
+	&:hover {
+		text-decoration: none;
+		.object-thumb__img { opacity: .75; }
+		.object-thumb__name { background-color: $red;}
+		
+	}	
+}
+.object-thumb__img {
+	height: 285px;
+	@include bg-cover;
+	transition: $tr1;
+}
+.object-thumb__name {
+	@include flex-row(nowrap, flex-start,center);
+	height: 74px;
+	background-color: $blue;
+	color: #fff;
+	padding: 0 0 0 23px;
+
+	@include font-kit(22px, 21px,19px,18px,17px);
+	font-weight: 400;
+	line-height: 1;
+	transition: $tr1;
+}
+
+@media screen and (max-width: 1450px) {
+	.object-thumb__img {
+		height: 225px;
+	}
+}

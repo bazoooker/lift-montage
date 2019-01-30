@@ -52,11 +52,7 @@
 @import "block/standard/universal/lead/lead";
 // @import "block/standard/universal/pagination/pagination";
 @import "block/standard/universal/photo/photo";
-// @import "block/standard/universal/search/search";
-// @import "block/standard/universal/tabs/tabs";
-// @import "block/standard/universal/tooltip/tooltip";
 @import "block/standard/universal/to-top/to-top";
-// @import "block/standard/universal/user-options/user-options";
 
 // запись на прием
 @import "block/custom/signup/signup";
@@ -67,7 +63,17 @@
 // @import "block/custom/shop-option/shop-option";
 // @import "block/custom/search-form/search-form";
 @import "block/custom/product-thumb/product-thumb";
+@import "block/custom/section/section";
+@import "block/custom/section-features/section-features";
 @import "block/custom/section-hero/section-hero";
+@import "block/custom/section-services/section-services";
+@import "block/custom/section-about/section-about";
+@import "block/custom/section-team/section-team";
+@import "block/custom/section-objects/section-objects";
+@import "block/custom/section-contacts/section-contacts";
+
+@import "block/custom/object-thumb/object-thumb";
+@import "block/custom/section-form/section-form";
 // @import "block/custom/product-modal/product-modal";
 // @import "block/custom/product-controls/product-controls";
 
@@ -138,32 +144,4 @@
 
 
 
-.goto-link {
-	display: inline-block;
-	padding: 10px 15px;
-	background-color: #efefef;
-	margin: 10px 30px;
-	cursor: pointer;
-}
 
-
-
-
-.section {
-	position: fixed;
-	left: 0;
-	top: 0;
-
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	transition: 800ms ease-in-out;
-
-	transform: translateX(-101%);
-
-
-	&.section_active {
-		width: 100%;
-		transform: translateX(0);
-	}
-}

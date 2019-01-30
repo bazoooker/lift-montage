@@ -1,211 +1,60 @@
 .page-footer {
 	flex: none;
 	width: 100%;
-	background-color: $gray4;
-
-	// .container {
-	// 	@include flex-row(nowrap, space-between, stretch);
-	// }
+	background-color: #fff;
 }
 
-.page-footer__top {
-	@include flex-row(nowrap,flex-start,center);
-	padding: 38px 0;
-	margin: 0 0 50px 0;
-	width: 100%;
-	border-bottom: 1px solid $gray2;
-}
 
-.page-footer__company-info {
-	@include flex-row(nowrap,center,center);
-	flex-grow: 1;
-	height: 100%;
-}
-
-.page-footer__company-info-item {
-	position: relative;
-	@include flex-row(nowrap,center,center);
-	padding: 0 0 0 34px;
-	height: 100%;
-	margin: 0 50px 0 0;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	letter-spacing: .5px;
-	@include font-kit(16px,16px,15px,15px,14px);
-	line-height: .9;
-	text-decoration: none;
-	transition: $tr2;
-
-	.icon {
-		position: absolute;
-		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
-		width: 20px;
-		height: 20px;
-	}
-}
-
-a.page-footer__company-info-item:hover {color: $yellow;text-decoration: none;}
-
-
-
-.page-footer__links {
-	h4 {
-		color: $yellow;
-		@include font-kit(16px,16px,15px,15px,14px);
-		margin: 0 0 22px 0;
-	}
-}
-.page-footer__link-col {
-	position: relative;
-	h4 {
-		position: absolute;
-		top: 0;
-		left:0;
-	}
-
-	ul {
-		margin: 0;
-		padding: 40px 0 0 0;
-		list-style: none;
-	}
-	li {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		&::before {display: none;}
-		a {
-			display: block;
-			padding: 11px 0;
-			color: #f2f2f2;
-			font-size: 14px;
-		}
-	}
-}
 
 
 .page-footer__legal {
 	padding: $gutter 0;
-	background-color: #535557;
+	color: #122346;
 	.container {
 		@include flex-row(nowrap,space-between,center);
-		
 	}
 }
 .page-footer__copy {
-	text-transform: uppercase;
 	@include font-kit(14px,14px,13px,13px,14px);
-	color: #fff;
+	color: #122346;
+	font-weight: 300;
 }
 .page-footer__by {
 	@include font-kit(14px,14px,13px,13px,13px);
-	color: #fff;
-
+	color: #122346;
+	font-weight: 300;
 }
 
 
+.footer-container {
+	position: relative;
+	.page-footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
 
-// responsiveness
-@media screen and (max-width: 1200px) {
-	.page-footer__top {
-		@include flex-row(nowrap,center,center);
-		.logo {
-			flex: 1 1 50%;
-			max-width: 50%;
-			width: 50%;
-			background-size: 180px;
+		a {
+			color: #122346;
+			font-weight: 300;
 		}
 	}
-	.page-footer__company-info {
-		flex-wrap: wrap;
-		flex: 1 1 50%;
-	}
-	.page-footer__company-info-item {
-		flex: 1 1 100%;
-		@include flex-row(nowrap,flex-start,center);
-		margin: 0 0 20px 0;
-
-		&:last-child {margin-bottom: 0;}
-	}
 }
 
-@media screen and (max-width: 1024px) {
 
-}
-
-@media screen and (max-width: 992px) {
-
-}
-
+@media screen and (max-width: 1450px) {}
+@media screen and (max-width: 1240px) {}
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 992px) {}
 @media screen and (max-width: 768px) {
-	.page-footer__top {
-		@include flex-row(wrap,center,center);
-		.logo {
-			flex: 1 1 100%;
-			max-width: 100%;
-			margin: 0 0 40px 0;
-		}
-	}
-	.page-footer__company-info {
-		flex: 0 0 250px;
-		max-width: 250px;
-	}
-
-	.page-footer__company-info-item {
-		width: auto;
-	}
-
-	.page-footer__links {
-		.col-3 {
-			flex: 1 1 50%;
-    		max-width: 50%;
-		}
-	}
-
-}
-
-@media screen and (max-width: 568px) {
-	.page-footer__links {
-		.col-3 {
-			flex: 1 1 100%;
-    		max-width: 100%;
-		}
-	}
-
-	.page-footer__link-col {
-		padding: 0 0 0 30px;
-		h4 {
-			position: static;
-		}
-		ul {
-			padding: 0;
-		}
-	}
-
-	.page-footer__top {
-		padding-left: 30px;
-		@include flex-row(wrap,center,center);
-		.logo {
-			background-position: 0 50%;
-		}
-		.page-footer__company-info {
-			flex: 1 1 100%;
-			max-width: 100%;
-		}
-	}
-
 	.page-footer__legal {
-		padding: 40px 0;
 		.container {
 			flex-wrap: wrap;
+			span {flex: 1 1 100%; text-align: center; margin: 10px;}
 		}
 	}
-	.page-footer__copy {margin: 0 0 12px 0;}
-	.page-footer__copy,
-	.page-footer__by {
-		flex: 1 1 100%;
-		text-align: center;
-	}
+
 }
+@media screen and (max-width: 568px) {}
+@media screen and (max-width: 413px) {}

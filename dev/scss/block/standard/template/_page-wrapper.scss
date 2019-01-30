@@ -6,8 +6,19 @@
     overflow-x: hidden;
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 1450px) {}
+@media screen and (max-width: 1240px) {}
+@media screen and (max-width: 1024px) {
 	.page-wrapper {
-		padding-top: 60px;
+		@include flex-row(wrap,flex-start,flex-start);
+	    height: auto;
 	}
 }
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 568px) {}
+@media screen and (max-width: 413px) {}

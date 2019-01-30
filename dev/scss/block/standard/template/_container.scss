@@ -6,3 +6,27 @@
 	// background: lightgray;
 }
 
+
+@media screen and (max-width: 1450px) {
+	.container {
+		max-width: 100%;
+		padding: 0 90px 0 200px;
+	}
+}
+@media screen and (max-width: 1240px) {}
+@media screen and (max-width: 1240px) {}
+@media screen and (max-width: 1024px) {
+	.container {
+		max-width: 992px;
+		padding: 0 60px;
+	}
+}
+@media screen and (max-width: 992px) {}
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 992px;
+		padding: 0 20px;
+	}
+}
+@media screen and (max-width: 568px) {}
+@media screen and (max-width: 413px) {}
