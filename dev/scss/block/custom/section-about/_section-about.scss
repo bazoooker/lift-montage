@@ -16,20 +16,264 @@
 	}
 }
 
+.section-about__description {
+	height: 350px;
+	overflow-y: scroll;
+}
 
-@media screen and (max-width: 1450px) {}
-@media screen and (max-width: 1240px) {}
-@media screen and (max-width: 1024px) {}
-@media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {
+// большие десктопы
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
 	.section-about {
-		padding: 0 0 0 0;
+		img {
+			height: auto;
+			width: 100%;
+
+		}
+	}
+	.section-about__description {
+		height: 240px;
+	}
+}
+
+
+// большие десктопы
+@media screen and (min-width: 1366px) {
+	.section_active {
+		.section-about {
+			.col-6 {
+				p {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+		}
+		.swiper-sertificates {
+			opacity: 1;
+			transform: translateX(0);	
+		}
+	}
+}
+
+// десктопы
+@media screen and (min-width: 1200px) and (max-width: 1365px) {
+	.section_active {
+		.section-about {
+			.col-6 {
+				flex: 0 0 100%;
+				max-width: 100%;
+
+				p {
+					opacity: 1;
+					transform: translateX(0);
+
+				}
+			}
+		}
+		.swiper-sertificates {
+			opacity: 1;
+			transform: translateX(0);	
+		}
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 1365px) and (orientation: portrait) {
+	.section_active {
+		.section-about {
+			.col-6 {
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			.swiper-sertificates {
+				opacity: 1;
+				transform: translateX(0);	
+			}
+		}
+	}
+}
+@media screen and (min-width: 1200px) and (max-width: 1365px) and (orientation: landscape) {
+	.section_active {
+		.section-about {
+			.col-6 {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+		.swiper-sertificates {
+			opacity: 1;
+			transform: translateX(0);	
+		}
+	}
+}
+
+
+// малые декстопы и квадратные мониторы
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.section_active {
+		.section-about {
+			.col-6 {
+				flex: 0 0 100%;
+				max-width: 100%;
+				p {
+					opacity: 1;
+					transform: translateX(0);
+
+				}
+			}
+			.swiper-sertificates {
+				opacity: 1;
+				transform: translateX(0);	
+			}
+		}
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: portrait) {
+	.section_active {
+		.section-about {
+			.col-6 {
+				&:first-of-type {margin-bottom: 40px;}
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			.swiper-sertificates {
+				margin: 0 auto;
+				opacity: 1;
+				transform: translateX(0);	
+			}
+			.swiper-sertificates__arrows {
+				left: 50%;
+    			transform: translateX(-50%);
+    			bottom: -60px;
+			}
+			.swiper-sertificates__pagination {
+				bottom: -130px;
+				left: 50%;
+    			transform: translateX(-50%);
+			}
+		}
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: landscape) {
+	.section_active {
+		.section-about {
+			.col-6 {
+				&:first-of-type {margin-bottom: 40px;}
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+			.swiper-sertificates {
+				opacity: 1;
+				transform: translateX(0);	
+			}
+			.swiper-sertificates__arrows {
+				right: 0;
+				left: auto;
+    			bottom: 80px;
+			}
+			.swiper-sertificates__pagination {
+				bottom: 20px;
+				right: 0%;
+				left: auto;
+			}
+		}
+	}
+}
+
+
+
+
+// планшеты
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.section-about {
+		padding: 120px 0;
+			.col-6 {				
+				p {
+					opacity: 1;
+					transform: translateX(0);
+
+				}
+			}
+		.swiper-sertificates {
+			opacity: 1;
+			transform: translateX(0);	
+		}
+	}
+}
+
+
+
+
+
+// большие телефоны и телефоны в горизонтальной ориентации 
+@media screen and (min-width: 568px) and (max-width: 767px) {
+	.section-about {
+		padding: 80px 0;
 		padding-top: 75px;
 
 		.col-6 {
 			position: relative;
+			p {
+				opacity: 1;
+				transform: translateX(0);
+
+			}
+		}
+		.swiper-sertificates {
+			opacity: 1;
+			transform: translateX(0);	
 		}
 	}
 }
-@media screen and (max-width: 568px) {}
-@media screen and (max-width: 413px) {}
+@media screen and (min-width: 568px) and (max-width: 767px) and (orientation: portrait) {
+	// расположение элементов внутри блока
+}
+@media screen and (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
+	// расположение элементов внутри блока
+}
+
+
+
+
+
+// телефоны 
+@media screen and (min-width: 414px) and (max-width: 567px) {
+	.section-about {
+		.col-6 {
+			&:last-of-type {padding: 0 0 50px 0;}
+			p {
+				opacity: 1;
+				transform: translateX(0);
+
+			}
+		}
+		.swiper-sertificates {
+			opacity: 1;
+			transform: translateX(0);	
+		}
+		.swiper-sertificates__arrows {
+			bottom: -10px;
+		}
+	}
+}
+
+
+
+
+// телефоны 
+@media screen and (max-width: 413px) {
+	.section-about {
+		.col-6 {
+			&:last-of-type {padding: 0 0 50px 0;}
+			p {
+				opacity: 1;
+				transform: translateX(0);
+
+			}
+		}
+		.swiper-sertificates {
+			opacity: 1;
+			transform: translateX(0);	
+		}
+		.swiper-sertificates__arrows {
+			bottom: -10px;
+		}
+	}
+}

@@ -50,16 +50,26 @@
 	font-size: 20px;
 	margin: 0 0 11px 0;
 	cursor: pointer;
+	transition: $tr1;
 
 
 	&:hover {
 		color: $red;
 		border-color: $red;
+		transform: scale(1.08);
 	}
 }
 .nav__number_active {
 	color: $red !important;
 	border-color: $red !important;
+}
+
+.nav__number_clicked {
+	color: #ffff !important;
+	border-color: #fff !important;
+	background-color: $red !important;
+	transition: 900ms !important;
+	transform: scale(1.35) !important;
 }
 
 .nav__next {
@@ -100,15 +110,8 @@
 
 
 
-@media screen and (max-width: 1450px) {}
-@media screen and (max-width: 1240px) {}
-@media screen and (max-width: 1240px) {}
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1365px) {
 	.nav {
 		display: none;
 	}
 }
-@media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {}
-@media screen and (max-width: 568px) {}
-@media screen and (max-width: 413px) {}

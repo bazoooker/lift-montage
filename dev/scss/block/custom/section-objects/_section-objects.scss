@@ -4,14 +4,146 @@
 }
 
 
-@media screen and (max-width: 1450px) {}
-@media screen and (max-width: 1240px) {}
-@media screen and (max-width: 1024px) {}
-@media screen and (max-width: 992px) {}
 @media screen and (max-width: 768px) {
 	.section-objects {
 		padding: 0px;
 	}
 }
-@media screen and (max-width: 568px) {}
-@media screen and (max-width: 413px) {}
+
+
+
+
+// большие десктопы
+@media screen and (min-width: 1366px) {
+	.section_active {
+		.swiper-objects {
+			opacity: 1;
+			transform: none;
+		}
+		.swiper-objects__arrows {
+			opacity: 1;
+			transform: translateX(-30px) translateY(0);
+
+		}
+
+	}
+}
+
+// десктопы
+@media screen and (min-width: 1200px) and (max-width: 1365px) {
+	.section_active {
+		.swiper-objects {
+			opacity: 1;
+			transform: none;
+		}
+		.swiper-objects__arrows {
+			opacity: 1;
+			transform: translateX(25px) translateY(0);
+
+		}
+	}
+}
+
+
+// малые декстопы и квадратные мониторы
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.section_active {
+		.swiper-objects {
+			opacity: 1;
+			transform: none;
+		}
+		.swiper-objects__arrows {
+			opacity: 1;
+			transform: translateX(25px) translateY(0);
+
+		}
+	}
+}
+
+
+
+
+// планшеты
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.swiper-objects__arrows { transform: translateY(30px) translateX(-30px); }
+	.section-objects {
+		padding: 0 0 120px 0;
+		.swiper-objects {
+			opacity: 1;
+			transform: none;
+		}
+		.swiper-objects__arrows {
+			opacity: 1;
+			transform: translateX(-30px) translateY(0);
+			bottom: 60px;
+		}
+	}
+}
+
+
+
+
+
+// большие телефоны и телефоны в горизонтальной ориентации 
+@media screen and (min-width: 568px) and (max-width: 767px) {
+	.swiper-objects__arrows { transform: translateY(30px) translateX(25px); }
+	.section-objects {
+		padding: 0 0 120px 0;
+		.swiper-objects {
+			opacity: 1;
+			transform: none;
+		}
+		.swiper-objects__arrows {
+			opacity: 1;
+			transform: translateX(-30px) translateY(0);
+			bottom: 60px;
+		}
+	}
+}
+@media screen and (min-width: 568px) and (max-width: 767px) and (orientation: portrait) {
+	// расположение элементов внутри блока
+}
+@media screen and (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
+	// расположение элементов внутри блока
+}
+
+
+
+
+
+// телефоны 
+@media screen and (min-width: 414px) and (max-width: 567px) {
+	.swiper-objects__arrows { transform: translateY(30px) translateX(25px); }
+	.section-objects {
+		padding: 0 0 120px 0;
+		.swiper-objects {
+			opacity: 1;
+			transform: none;
+		}
+		.swiper-objects__arrows {
+			opacity: 1;
+			transform: translateX(-30px) translateY(0);
+			bottom: 60px;
+		}
+	}
+}
+
+
+
+
+// телефоны 
+@media screen and (max-width: 413px) {
+	.swiper-objects__arrows { transform: translateY(30px) translateX(25px); }
+	.section-objects {
+		padding: 0 0 120px 0;
+		.swiper-objects {
+			opacity: 1;
+			transform: none;
+		}
+		.swiper-objects__arrows {
+			opacity: 1;
+			transform: translateX(-30px) translateY(0);
+			bottom: 60px;
+		}
+	}
+}

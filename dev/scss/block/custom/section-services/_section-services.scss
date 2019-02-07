@@ -4,7 +4,7 @@
 }
 
 .section-services__lead {
-	width: 44%;
+	width: 500px;
 
 	.lead {
 		padding: 65px 70px 130px 0;
@@ -25,7 +25,7 @@
 	left: 0;
 	top: 0;
 	height: 100%;
-	width: 100%;
+	width: 100.1%;
 	@include bg-cover;
 	background-image: url(/img/bg/dude_min.jpg);
 	z-index: -2;
@@ -47,43 +47,289 @@
 
 
 
-
-@media screen and (max-width: 1450px) {
-	.section-services__bg::before {
-		width: 75%;
-	}
-}
-@media screen and (max-width: 1240px) {}
-@media screen and (max-width: 1024px) {}
-@media screen and (max-width: 992px) {}
-@media screen and (max-width: 768px) {
-
-	.section-services {
-		padding-top: 75px;
-		height: 100%;
-	}
-
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
 	.section-services__lead {
-		// min-height: 85vh;
-		// padding: 50px 0 50px 0;
-
 		.lead {
-			padding: 65px 70px 130px 0 !important;
+			padding: 65px 70px 110px 0;
 			.lead__caption {
 				font-weight: 300;
 			}
-
 			.swiper-lead__arrows {
-				bottom: 75px;
+				bottom: 60px;
 			}
+		}
+	}
+}
+
+
+
+
+
+// @media screen and (max-width: 1450px) {
+// 	.section-services__bg::before {
+// 		width: 75%;
+// 	}
+// }
+// @media screen and (max-width: 768px) {
+
+// 	.section-services {
+// 		padding-top: 75px;
+// 		height: 100%;
+// 	}
+
+// 	.section-services__lead {
+
+// 		.lead {
+// 			padding: 65px 70px 130px 0 !important;
+// 			.lead__caption {
+// 				font-weight: 300;
+// 			}
+
+// 			.swiper-lead__arrows {
+// 				bottom: 75px;
+// 			}
 			
+// 		}
+// 	}
+
+// 	.section-services__bg {
+// 		&::before {width: 100% !important;}
+// 	}
+
+// }
+
+
+
+
+
+
+
+
+
+
+// большие десктопы
+@media screen and (min-width: 1450px) {
+	.section_active {
+		.swiper-lead__pagination-big {
+			opacity: .3;
+			transition: 500ms;
+			transition-delay: 1000ms;
+		}
+		.section-services {
+			.lead {
+				transform: none;
+				opacity: 1;
+			}
+		}
+
+		.section-services__bg {
+			&::before {
+				width: 50%;
+			}
+		}
+	}
+}
+// десктопы
+@media screen and (min-width: 1364px) and (max-width: 1449px) {
+	.section_active {
+		.swiper-lead__pagination-big {
+			opacity: .3;
+			transition: 500ms;
+			transition-delay: 1000ms;
+		}
+		.section-services {
+			.lead {
+				transform: none;
+				opacity: 1;
+			}
+		}
+
+		.section-services__bg {
+			&::before {
+				width: 790px;
+			}
+		}
+	}
+}
+
+// десктопы
+@media screen and (min-width: 1200px) and (max-width: 1365px) {
+	.section_active {
+		.swiper-lead__pagination-big {
+			opacity: .3;
+			transition: 500ms;
+			transition-delay: 1000ms;
+		}
+		.section-services {
+			.lead {
+				transform: none;
+				opacity: 1;
+			}
+		}
+
+		.section-services__bg {
+			&::before {
+				width: 790px;
+			}
+		}
+	}
+}
+
+
+// малые декстопы и квадратные мониторы
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+	.section-services__lead {
+		width: 500px;
+	}
+	.section_active {
+		.section-services {
+			.lead {
+				transform: none;
+				opacity: 1;
+			}
+		}
+
+		.section-services__bg {
+			background-position: 25% 50%;
+			&::before {
+				width: 775px;
+			}
+		}
+	}
+}
+
+
+
+
+// планшеты
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	
+	.section-services__lead {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.section-services {
+		position: relative;
+		.lead {
+			transform: none;
+			opacity: 1;
 		}
 	}
 
 	.section-services__bg {
-		&::before {width: 100% !important;}
+		background-position: 25% 50%;
+		&::before {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+	.section-services {
+		height: 790px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+	.section-services {
+		height: 760px;
+	}
+}
+
+
+
+
+
+// большие телефоны и телефоны в горизонтальной ориентации 
+@media screen and (min-width: 568px) and (max-width: 767px) {
+		.section-services {
+			height: 790px;
+		}
+		.section-services__lead {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.section-services {
+		position: relative;
+		.lead {
+			transform: none;
+			opacity: 1;
+		}
 	}
 
+	.section-services__bg {
+		background-position: 25% 50%;
+		&::before {
+			width: 100%;
+		}
+	}
 }
-@media screen and (max-width: 568px) {}
-@media screen and (max-width: 413px) {}
+@media screen and (min-width: 568px) and (max-width: 767px) and (orientation: portrait) {
+	// расположение элементов внутри блока
+}
+@media screen and (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
+	// расположение элементов внутри блока
+}
+
+
+
+
+
+// телефоны 
+@media screen and (min-width: 414px) and (max-width: 567px) {
+	.section-services {
+		height: 830px;
+	}
+	.section-services__lead {
+		width: 90%;
+		margin: 0 auto;
+		.lead {
+			padding: 65px 20px 130px 0;
+		}
+	}
+	.section-services {
+		position: relative;
+		.lead {
+			transform: none;
+			opacity: 1;
+		}
+	}
+
+	.section-services__bg {
+		background-position: 25% 50%;
+		&::before {
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+// телефоны 
+@media screen and (max-width: 413px) {
+	.section-services {
+		height: 830px;
+	}
+	.section-services__lead {
+		width: 100%;
+		margin: 0 auto;
+		.lead {
+			padding: 65px 15px 130px 0;
+		}
+	}
+	.section-services {
+		position: relative;
+		.lead {
+			transform: none;
+			opacity: 1;
+		}
+	}
+
+	.section-services__bg {
+		background-position: 25% 50%;
+		&::before {
+			width: 100%;
+		}
+	}
+}
+
